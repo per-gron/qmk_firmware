@@ -1,0 +1,4 @@
+Called:
+* board_init
+* matrix_init, which calls matrix_init_quantum, which returns.
+* matrix_init_kb
