@@ -26,6 +26,14 @@ void board_init(void) {
     // Set the crystal oscillator EN pin to high to enable it. (It's floating.)
     setPinOutput(C15);
     writePinHigh(C15);
+
+    // Set the TRANSLATE_EN high to enable I2C address translators and pull-ups.
+    setPinOutput(A3);
+    writePinHigh(A3);
+
+    // Set the LDC_SHUTDOWN low to enable the LDC1614 induction to digital converters.
+    setPinOutput(A1);
+    writePinLow(A1);
 }
 
 void matrix_scan_kb(void) {
