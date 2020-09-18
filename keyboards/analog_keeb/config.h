@@ -31,8 +31,8 @@
 #define DESCRIPTION     test board for qmk
 
 /* key matrix size */
-#define MATRIX_ROWS 1
-#define MATRIX_COLS 1
+#define MATRIX_ROWS 4
+#define MATRIX_COLS 12
 
 #define MOUSEKEY_INTERVAL    10
 #define MOUSEKEY_DELAY       0

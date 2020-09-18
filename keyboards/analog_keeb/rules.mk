@@ -2,8 +2,8 @@
 #   change yes to no to disable
 #
 # BOOTMAGIC_ENABLE = lite     # Virtual DIP switch configuration
-MOUSEKEY_ENABLE = yes       # Mouse keys
-EXTRAKEY_ENABLE = yes       # Audio control and System control
+MOUSEKEY_ENABLE = no        # Mouse keys
+EXTRAKEY_ENABLE = no        # Audio control and System control
 CONSOLE_ENABLE = yes        # Console for debug
 RAW_ENABLE = no
 MIDI_ENABLE = no
@@ -20,7 +20,7 @@ SPLIT_KEYBOARD = no
 KEYBOARD_SHARED_EP = yes
 
 CUSTOM_MATRIX = yes
-SRC += matrix.c
+SRC += ldc1614_registers.c matrix.c moving_average.c
 
 ## chip/board settings
 # the next two should match the directories in
